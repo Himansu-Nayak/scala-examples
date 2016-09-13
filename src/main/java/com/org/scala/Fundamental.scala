@@ -162,6 +162,14 @@ object Fundamental {
       fruit <- fruits
       fruitUpper = fruit.toUpperCase()
     } println(fruitUpper);
+
+    // Type 6
+    val filteredFruits = for {
+      fruit <- fruits if (fruit.startsWith("P"))
+    } yield (fruit);
+
+    for (x <- filteredFruits)
+      println(x);
   }
 
 
