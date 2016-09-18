@@ -11,7 +11,6 @@ object Fundamental {
     switchCaseInScala()
     SomeNoneInScala()
     loopInScala()
-    exceptionHandlingInScala()
   }
 
   def scalaVariable() {
@@ -173,26 +172,7 @@ object Fundamental {
       println(x);
   }
 
-  // no checked exception in scala
-  def exceptionHandlingInScala(): Unit = {
 
-    // type 1
-    try {
-      var array = Array(1, 2, 3)
-      println(array(3))
-    } catch {
-      case a: java.lang.ArrayIndexOutOfBoundsException => println("ArrayIndexOutOfBoundsException")
-      case b: java.lang.Exception => println("Exception")
-    }
-
-    // type 2
-    val result = try{
-      Integer.parseInt("Himansu")
-    }catch {
-      case _ => 0
-    }
-    println(result)
-  }
 
 
 

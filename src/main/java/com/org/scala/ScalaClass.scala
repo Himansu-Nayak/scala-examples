@@ -2,9 +2,9 @@ package com.org.scala
 
 // http://stackoverflow.com/questions/5450251/what-is-the-scala-equivalent-of-the-this-operator-in-java
 // http://alvinalexander.com/scala/how-to-call-method-superclass-scala-cookbook
+// http://stackoverflow.com/questions/9919021/can-a-scala-class-extend-multiple-classes
 
 class Square(length: Int, breath: Int) {
-
   def area(): Integer = length * breath
 }
 
