@@ -28,3 +28,12 @@ object FirstClassFunction {
   }
 
 }
+
+object ClosureFunction {
+    val factor = 123
+    val muliplier = (i:Int) => i * factor
+    
+    def main(args: Array[String]){
+    println("Closure method returns : " + muliplier(2))
+  }
+}
